@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<style>
+			body{
+            	text-align:center;
+    			background: #f7f5f2;
+    			margin: 0;
+        	}
+        	h1{
+        		color: #000000;
+        		padding-top: 30px;
+        	}
+        	footer {
+			    text-align: center;
+			    padding: 40px 0;
+			    font-size: 13px;
+			    color: var(--text-light);
+			}
+
+        	/*LOGO*/
+        	.logo {
+			    font-family: 'Times New Roman', serif;
+			    font-size: 26px;
+			    letter-spacing: 1px;
+			}
+			.logo a{
+				transition: 0.3s;
+				color: black;
+				text-decoration: none;
+			}
+			.logo a:hover{
+
+			}
+
+
+			/*HEADER*/
+			.top-header {
+			    background: #f7f5f2;
+			    color: black;
+			    padding: 15px 30px;
+			}
+
+			.nav {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+			.menu {
+			    display: flex;
+			}
+			.menu a {
+			    margin-left: 25px;
+			    text-decoration: none;
+			    color: black;
+			    font-weight: bold;
+			    font-size: 16px;
+			    transition: 0.3s;
+			}
+			.menu a:hover {
+			    color: #ffd700;
+			}
+
+			/*BOXES*/
+			.mainbox {
+        	   width: 1000px;
+			   height: 335px;
+			   margin: 0 auto;
+			   background: #000000;
+			   border-radius: 20px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   padding-top: 5px;
+			   padding-bottom: 5px;
+			   padding-right: 0px;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+        	.box {
+	           width: 990px;
+			   height: 335px;
+			   margin: 0 auto;
+			   background: #ffffff;
+			   border-radius: 15px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   text-align: center;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+
+        	/*TABLES*/
+			table {
+			  width: 100%;
+			  border-collapse: collapse; /* removes double borders */
+			  border-radius: 10px;
+              overflow: hidden;
+              border-collapse: separate; /* must be separate */
+              border-spacing: 10px;      /* 👈 this is the gap */
+			}
+
+			th, td {
+			  border: 1px #333;
+			  padding: 10px;            /* space inside cells */
+			  text-align: center;
+			  border-radius: 10px; 
+			}
+
+			th {
+			  background-color: pink;
+			  color: white;
+			  text-transform: uppercase;
+              letter-spacing: 1px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #f2f2f2; /* zebra stripes */
+			}
+
+			tr:hover {
+			  background-color: #ddd;    /* hover effect */
+			}
+
+			/*BUTTONS*/
+			button{
+				border-radius: 20px;
+				border-style: solid;
+				border-color: #f7f5f2;
+				padding: 0px;
+			}
+			.gambar {
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 20px;
+			    overflow: hidden;
+			    background-color: #f7f5f2;
+			}
+
+			.gambar img {
+				width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			    display: block;
+			    border: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header class="top-header">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"> SZR</a>
+				</div>
+				<div class="menu">
+					<a href="mybiography.html">Biography</a>
+				    <a href="mygallery.html">Gallery</a>
+				    <a href="myschool.html">School</a>
+				    <a href="mylogin.html">Login</a>
+				    <a href="mysignup.html">Sign-up</a>
+				</div>
+			</div>
+		</header>
+
+		<h1>ASSIGNMENTS | LCC 500</h1>
+		<div class="mainbox">
+			<div class="box">
+					<table>
+						<tr>
+							<td style="text-align: center;">NO</td>
+							<td style="text-align: left;">TITLE</td>
+							<td style="text-align: left;">DURATION</td>
+							<td style="text-align: center;">DUE</td>
+							<td style="text-align: center;">STATUS</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">1</td>
+							<td style="text-align: left;">GROUP DISCUSSION TASK VIDEO RECORDING</td>
+							<td style="text-align: left;"></td>
+							<td style="text-align: center;">22/4</td>
+							<td style="text-align: center;">COMPLETED</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">2</td>
+							<td style="text-align: left;">WORKPACE DISCUSSION</td>
+							<td style="text-align: left;">-</td>
+							<td style="text-align: center;">WEEK 6</td>
+							<td style="text-align: center;">URGENT</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">3</td>
+							<td style="text-align: left;">EMAIL WRITING</td>
+							<td style="text-align: left;">-</td>
+							<td style="text-align: center;">WEEK 6</td>
+							<td style="text-align: center;">URGENT</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">4</td>
+							<td style="text-align: left;">COMPANY MEETING</td>
+							<td style="text-align: left;">-</td>
+							<td style="text-align: center;">-</td>
+							<td style="text-align: center;">NOT RELEASE</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">5</td>
+							<td style="text-align: left;">MINUTE MEETING WRITING</td>
+							<td style="text-align: left;">-</td>
+							<td style="text-align: center;">-</td>
+							<td style="text-align: center;">NOT RELEASE</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+
+		<br style="padding-top: 20px;">
+		<a href="myassignment.html" style="text-decoration: none;">
+			<button>
+				<div class="gambar">
+					<img src="crossaint.png"> 
+				</div>
+			</button>
+				<div style="color: black;">
+					click this crossaint to go back to assignment page
+				</div>
+		</a>
+
+		<footer>
+		    <p>
+		        &copy; 2026 Zulfah's Website. All rights reserved.
+		        <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+		    </p>
+		</footer>
+	</body>
+</html>

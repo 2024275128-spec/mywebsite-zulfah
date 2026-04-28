@@ -1,0 +1,411 @@
+<html>
+	<head>
+		<style>
+			body{
+            	text-align:center;
+    			background: #f7f5f2;
+    			margin: 0;
+        	}
+        	h1{
+        		color: #7a1010;
+        	}
+        	h2{
+        		color: #000000;
+        		text-align: center;
+        	}
+        	fieldset{
+        		width: 800px;
+        		border-radius: 20px;
+        		display: inline-block;
+    			text-align: left;
+			}
+			footer {
+			    text-align: center;
+			    padding: 40px 0;
+			    font-size: 13px;
+			    color: var(--text-light);
+			}
+
+			/*LOGO*/
+        	.logo {
+			    font-family: 'Times New Roman', serif;
+			    font-size: 26px;
+			    letter-spacing: 1px;
+			}
+			.logo a{
+				transition: 0.3s;
+				color: black;
+				text-decoration: none;
+			}
+			.logo a:hover{
+
+			}
+
+
+			/*HEADER*/
+			.top-header {
+			    background: #f7f5f2;
+			    color: black;
+			    padding: 15px 30px;
+			}
+
+			.nav {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+			.menu {
+			    display: flex;
+			}
+			.menu a {
+			    margin-left: 25px;
+			    text-decoration: none;
+			    color: black;
+			    font-weight: bold;
+			    font-size: 16px;
+			    transition: 0.3s;
+			}
+			.menu a:hover {
+			    color: #ffd700;
+			}
+
+
+			/*BOXES*/
+			.mainbox {
+			   margin: 0 auto;
+			   display: flex; 
+			   justify-content: left;
+			   height: auto;
+        	}
+        	.box {
+        		width: 500px;
+			    background: #ffffff;
+			    border-radius: 20px;
+			    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			    font-family: Times New Roman;
+			    padding-top: 0px;
+			    display: flex;
+			    flex-direction: column;  
+    			justify-content: flex-start; 
+    			margin-top: 50px;
+    			margin-left: 30px;
+    			height: auto;
+    			padding-bottom: 30px;
+    			text-align: left;
+    			
+        	}
+        	.box h1 {
+			  width: 100%;
+			  text-align: center;
+			  margin-bottom: 50px;
+			}
+        	.box form {
+			  height: 100%;
+			  
+			}
+			.box input {
+			  width: 400px;
+			  height: 28px;
+			  align-self: center;
+			  border-width: 1px;
+  			  border-radius: 5px;
+			  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			  background-color: #f7f6f6;
+			  margin-left: 40px;
+			  margin-top: 15px;
+			  margin-bottom: 15px;
+			}
+			.box label {
+				margin: 0;
+				margin-left: 38px;
+			}
+        	.box hr {
+			  border: none;
+			  height: 1px;
+			  background-color: #000000;
+			  width: 390px;
+			  align-self: center;
+			  margin-top: 20px;
+			  margin-left: 50px;
+			  margin-bottom: 20px;
+			}
+			.box2 {
+	            width: 500px;
+	            height: 760px;
+			    background: #ffffff;
+			    border-radius: 20px;
+			    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			    font-family: Times New Roman;
+			    padding-top: 100px;
+			    display: flex;
+			    flex-direction: column;  
+    			justify-content: left; 
+    			margin-top: 50px;
+    			margin-left: 20px;
+    			text-align: left
+        	}
+        	.box2 form {
+			  height: 100%;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: flex-start;
+			  
+			}
+			.box2 input {
+			  width: 345px;
+			  height: 28px;
+			  align-self: center;
+			  border-width: 1px;
+  			  border-radius: 5px;
+			  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			  background-color: #f7f6f6;
+			  margin-left: 40px;
+			  margin-top: 15px;
+			  margin-bottom: 15px;
+			  
+			}
+			.box2 hr {
+			  border: none;
+			  height: 1px;
+			  background-color: #000000;
+			  width: 430px;
+			  align-self: center;
+			  margin-top: 20px;
+			  margin-left: 50px;
+			  margin-bottom: 20px;
+
+			}
+			.box2 button {
+			  width: 100px;
+			  height: 30px;
+			  border-width: 4px;
+			  border-radius: 20px;
+			  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			  border-color: #7a1010;
+			  border-style: solid;
+			}
+			.box2 button:hover{
+				color: #ffd700;
+			}
+			.box2 label {
+				margin: 0;
+				margin-left: 38px;
+			}
+			.box3{
+				width: 170px;
+				height: 857px;
+				background: linear-gradient(250deg, #f49baf, #f2a7bf, #e3cde5);
+				margin-top: 50px;
+				margin-left: 20px;
+				border-radius: 15px;
+
+			}
+			
+			
+			/*ACTIONS*/
+			.button {
+			  display: flex;           
+			  justify-content: center; 
+			  gap: 15px;               
+			  margin-top: 40px;
+			  margin-bottom: 40px;
+			}
+
+			
+			.second{
+				width: 180px;
+        		border-radius: 20px;
+        		display: inline-block;
+    			text-align: left;
+			}
+			.checkbox {
+			  display: flex;
+			  align-items: center;   
+			  gap: 8px;
+			  margin-left: 35px;
+			  margin-bottom: 8px;
+			}
+
+			input[type="checkbox"] {
+			  width: 22px;
+			  height: 22px;
+			  margin: 0;
+			  gap: 3px;             
+			}
+        	.radio {
+			  display: inline-flex;
+			  align-items: center;   /* ⭐ aligns text with radio */
+			  gap: 5px;              /* space between circle & text */
+			  margin-left: 10px;
+			  margin-right: 20px;
+			}
+			input[type="radio"] {
+			  align-self: flex-start;
+			  width: 22px;              
+			  height: 22px;
+			  box-shadow: none;
+			  margin-left: 30px;
+			}
+			select{
+			  width: 400px;
+			  height: 28px;
+			  align-self: flex-start;
+			  border-width: 1px;
+  			  border-radius: 2px;
+			  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			  background-color: #f7f6f6;
+			  margin-left: 40px;
+			  margin-top: 20px;
+			  margin-bottom: 20px;
+			  gap: 5px;
+			}
+			
+        	
+		</style>
+	</head>
+
+	<body>
+		<header class="top-header">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"> SZR</a>
+				</div>
+				<div class="menu">
+					<a href="mybiography.html">Biography</a>
+				    <a href="mygallery.html">Gallery</a>
+				    <a href="myschool.html">School</a>
+				    <a href="mylogin.html">Login</a>
+				    <a href="mysignup.html"><u style="color: #7a1010">Sign-up</u></a>
+				</div>
+			</div>
+		</header>
+		<form action="login.php" method="POST" onsubmit="return checkPassword()">
+		<div class="mainbox">
+			
+			<div class="box">
+
+				<table style="border-collapse: collapse; width:100%; table-layout: fixed;">
+						<tr><td>
+
+						<h1 style="text-align: center; margin-top: 20px;">Sign-up</h1>
+
+						<label><b>First Name:</b></label><br>
+						<input type="text" name="fName" required><br>
+
+						<label><b>Last Name:</b></label><br>
+						<input type="text" name="lName" required><br>
+
+						<label><b>Gender:</b></label><br>
+
+						<label class="radio">
+						<input type="radio" name="gender" value="male"> Male
+						</label>
+
+						<label class="radio">
+						<input type="radio" name="gender" value="female"> Female
+						</label>
+
+						<hr>
+
+						<label><b>Address:</b></label><br>
+						<input type="text" name="address" required><br>
+
+						<label><b>Poscode:</b></label><br>
+						<input type="text" name="poscode" required><br>
+
+						<label><b>State:</b></label><br>
+
+						<select name="state" required>
+						<option>Terengganu</option>
+						<option>Pahang</option>
+						<option>Melaka</option>
+						<option>Perak</option>
+						<option>Selangor</option>
+						<option>Perlis</option>
+						<option>Kelantan</option>
+						<option>Kedah</option>
+						<option>Kuala Lumpur</option>
+						<option>Sabah</option>
+						<option>Sarawak</option>
+						<option>Johor</option>
+						<option>Langkawi</option>
+						</select><br>
+
+						<hr>
+
+						<label><b>Phone Number:</b></label><br>
+						<input type="text" name="phoneNum" required><br>
+
+						<label><b>Email:</b></label><br>
+						<input type="text" name="email" required>
+
+						</td></tr>
+				</table>
+
+			</div>
+			<div class="box2">
+
+			<table style="border-collapse: collapse; width:100%; table-layout: fixed;">
+					<tr><td>
+
+							<label><b>Education Level:</b></label><br>
+
+							<label class="checkbox"><input type="checkbox" name="foundation" required> Foundation</label>
+							<label class="checkbox"><input type="checkbox" name="diploma" required> Diploma</label>
+							<label class="checkbox"><input type="checkbox" name="degree" required> Degree</label>
+							<label class="checkbox"><input type="checkbox" name="master" required> Master</label>
+							<label class="checkbox"><input type="checkbox" name="phd" required> Phd</label>
+
+							<hr>
+
+							<label><b>Username:</b></label><br>
+							<input type="text" name="username" required><br>
+
+							<label><b>Password:</b></label><br>
+							<input type="password" id="password" name="password" required><br>
+
+							<label><b>Confirm Password</b></label><br>
+							<input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+							<script>
+							function checkPassword() {
+							  var pass = document.getElementById("password").value;
+							  var confirmPass = document.getElementById("confirmPassword").value;
+
+							  if (pass !== confirmPass) {
+							    alert("Passwords do not match!");
+							    return false;
+							  }
+							  return true;
+							}
+							</script>
+
+							<div class="button">
+							    <a href="mybiography.html">
+							        <button class="login" type="button">Sign Up</button>
+							    </a>
+							    <button class="login" type="reset">Clear</button>
+							    <a href="mylogin.html">
+							        <button class="login" type="button">Cancel</button>
+							    </a>
+							</div>
+
+							</td></tr>
+					</table>
+
+					</div>
+					
+					<div class="box3"></div>
+					
+				</div>
+	</form>
+
+		<footer>
+		    <p>
+		        &copy; 2026 Zulfah's Website. All rights reserved.
+		        <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+		    </p>
+		</footer>
+
+	</body>
+</html>

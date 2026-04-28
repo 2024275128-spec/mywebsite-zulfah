@@ -1,0 +1,222 @@
+<html>
+	<head>
+		<style>
+			body{
+            	text-align:center;
+    			background: #f7f5f2;
+    			margin: 0;
+        	}
+        	h1{
+        		color: #000000;
+        		padding-top: 30px;
+        	}
+        	footer {
+			    text-align: center;
+			    padding: 40px 0;
+			    font-size: 13px;
+			    color: var(--text-light);
+			}
+
+        	/*LOGO*/
+        	.logo {
+			    font-family: 'Times New Roman', serif;
+			    font-size: 26px;
+			    letter-spacing: 1px;
+			}
+			.logo a{
+				transition: 0.3s;
+				color: black;
+				text-decoration: none;
+			}
+			.logo a:hover{
+
+			}
+
+
+			/*HEADER*/
+			.top-header {
+			    background: #f7f5f2;
+			    color: black;
+			    padding: 15px 30px;
+			}
+
+			.nav {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+			.menu {
+			    display: flex;
+			}
+			.menu a {
+			    margin-left: 25px;
+			    text-decoration: none;
+			    color: black;
+			    font-weight: bold;
+			    font-size: 16px;
+			    transition: 0.3s;
+			}
+			.menu a:hover {
+			    color: #ffd700;
+			}
+
+			/*BOXES*/
+			.mainbox {
+        	   width: 800px;
+			   height: 310px;
+			   margin: 0 auto;
+			   margin-top: 15px;
+			   background: #000000;
+			   border-radius: 20px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   padding-top: 25px;
+			   padding-bottom: 25px;
+			   padding-right: 0px;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+        	.box {
+	           width: 790px;
+			   height: 350px;
+			   margin: 0 auto;
+			   background: #ffffff;
+			   border-radius: 15px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   text-align: center;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+
+        	/*TABLES*/
+			table {
+			  width: 100%;
+			  border-collapse: collapse; /* removes double borders */
+			  border-radius: 10px;
+              overflow: hidden;
+              border-collapse: separate; /* must be separate */
+              border-spacing: 10px;      /* 👈 this is the gap */
+			}
+
+			th, td {
+			  border: 1px #333;
+			  padding: 10px;            /* space inside cells */
+			  text-align: center;
+			  border-radius: 10px; 
+			}
+
+			th {
+			  background-color: pink;
+			  color: white;
+			  text-transform: uppercase;
+              letter-spacing: 1px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #f2f2f2; /* zebra stripes */
+			}
+
+			tr:hover {
+			  background-color: #ddd;    /* hover effect */
+			}
+
+			/*BUTTONS*/
+			button{
+				border-radius: 20px;
+				border-style: solid;
+				border-color: #f7f5f2;
+				padding: 0px;
+			}
+			.gambar {
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 20px;
+			    overflow: hidden;
+			    background-color: #f7f5f2;
+			}
+
+			.gambar img {
+				width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			    display: block;
+			    border: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header class="top-header">
+			<div class="nav">
+				<div class="logo">
+					<a href="mywelcomepage.html"> SZR</a>
+				</div>
+				<div class="menu">
+					<a href="mybiography.html">Biography</a>
+				    <a href="mygallery.html">Gallery</a>
+				    <a href="myschool.html">School</a>
+				    <a href="mylogin.html">Login</a>
+				    <a href="mysignup.html">Sign-up</a>
+				</div>
+			</div>
+		</header>
+
+		<h1>SUBJECT INFO</h1>
+		<div class="mainbox">
+			<div class="box">
+					<table>
+						<tr>
+							<td style="text-align: left;">NAME</td>
+							<td>:</td>
+							<td style="text-align: left;">DYNAMIC WEB APPLICATION DEVELOPMENT</td>
+						</tr>
+						<tr>
+							<td style="text-align: left;">CODE</td>
+							<td>:</td>
+							<td style="text-align: left;">CSC 574</td>
+						</tr>
+						<tr>
+							<td style="text-align: left;">CREADIT HOUR</td>
+							<td>:</td>
+							<td style="text-align: left;">3</td>
+						</tr>
+						<tr>
+							<td style="text-align: left;">LECTURE'S NAME</td>
+							<td>:</td>
+							<td style="text-align: left;">SITI ROZANAR BINTI ISMAIL</td>
+						</tr>
+						<tr>
+							<td style="text-align: left;">SCEDULE & VANUE</td>
+							<td>:</td>
+							<td style="text-align: left;">MON - 09:00 A.M. - 11:00 A.M. (ZETA MK1)<br> 
+														  THU - 09:00 A.M. - 11:00 A.M. (ZETA MK2)</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+
+		<br style="padding-top: 20px;">
+		<a href="mytimetable.html" style="text-decoration: none;">
+			<button>
+				<div class="gambar">
+					<img src="matchastrawberry.png"> 
+				</div>
+			</button>
+				<div style="color: black;">
+					click this matcha strawberry to go back to timetable page
+				</div>
+		</a>
+
+		<footer>
+		    <p>
+		        &copy; 2026 Zulfah's Website. All rights reserved.
+		        <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+		    </p>
+		</footer>
+	</body>
+</html>

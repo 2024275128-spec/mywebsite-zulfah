@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+                background: #f7f5f2;
+                margin: 0;
+            }
+            h1{
+                color: #7a1010;
+            }
+            h2{
+                color: #000000;
+                text-align: center;
+            }
+            fieldset{
+                width: 800px;
+                border-radius: 20px;
+                display: inline-block;
+                text-align: left;
+            }
+            button{
+                margin-bottom: 0px;
+
+            }
+            footer {
+                text-align: center;
+                padding: 40px 0;
+                font-size: 13px;
+                color: var(--text-light);
+            }
+            .password{
+                margin-left: 20px;
+                font-size: 13px;
+            }
+
+            /*LOGO*/
+            .logo {
+                font-family: 'Times New Roman', serif;
+                font-size: 26px;
+                letter-spacing: 1px;
+            }
+            .logo a{
+                transition: 0.3s;
+                color: black;
+                text-decoration: none;
+            }
+            .logo a:hover{
+
+            }
+
+
+            /*HEADER*/
+            .top-header {
+                background: #f7f5f2;
+                color: black;
+                padding: 15px 30px;
+            }
+
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .menu {
+                display: flex;
+            }
+            .menu a {
+                margin-left: 25px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 16px;
+                transition: 0.3s;
+            }
+            .menu a:hover {
+                color: #ffd700;
+            }
+
+            /*BOXES*/
+            .mainbox {
+               margin: 0 auto;
+               display: flex; 
+               justify-content: left;
+            }
+            .box {
+                width: 370px;
+                height: auto;
+                background: #ffffff;
+                border-radius: 20px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                font-family: Times New Roman;
+                padding-top: 0px;
+                display: flex;
+                flex-direction: column;  
+                justify-content: flex-start; 
+                margin-top: 60px;
+                margin-left: 100px;
+            }
+            .box h1 {
+              width: 100%;
+              text-align: center;
+              margin-bottom: 50px;
+            }
+            .box form {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              
+            }
+            .box input {
+              width: 328px;
+              height: 25px;
+              margin-left: 20px;
+              border-width: 1px;
+              border-radius: 5px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+              background-color: #f7f6f6;
+            }
+            .button {
+               margin-left: 10px;
+               display: flex; 
+               justify-content: left;
+               gap: 5px;
+            }
+
+            .login {
+              margin-top: auto;
+              align-self: center;
+              width: 100px;
+              height: 30px;
+              border-width: 4px;
+              border-radius: 20px;
+              border-style: solid;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+              border-color: #7a1010;
+              margin-left: 10px;
+            }
+            button:hover{
+                color: #ffd700;
+            }
+            .signup{
+                text-decoration: underline;
+                font-size: 13px;
+                margin-top: auto;
+                align-self: center;
+                width: 100px;
+                height: 30px;
+                margin-left: 5px;
+                margin-top: 2px;
+                border: none;
+            }
+            .signup:hover{
+                color: #ffd700;
+            }
+
+            .box label {
+                margin-left: 10px;
+            }
+            .box2 {
+                width: 600px;
+                height: 390px;
+                margin-left: 110px;
+                margin-top: 60px;
+                background: #d9d9d9;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 20px;
+                background: linear-gradient(250deg, #f49baf, #f2a7bf, #e3cde5);
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+
+        <header class="top-header">
+            <div class="nav">
+                <div class="logo">
+                    <a href="index.html"> SZR</a>
+                </div>
+                <div class="menu">
+                    <a href="mybiography.html">Biography</a>
+                    <a href="mygallery.html">Gallery</a>
+                    <a href="myschool.html">School</a>
+                    <a href="mylogin.html"><u style="color: #7a1010">Login</u></a>
+                    <a href="mysignup.html">Sign-up</a>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="mainbox">
+
+            <div class="box2">
+
+            </div>
+
+            <div class="box">
+                <form action="login.php" method="POST">
+                    <h1 style="text-align: center;">Login</h1>
+
+                    <table style="border-collapse: collapse; border-spacing: 0;">
+                      
+                      <tr>
+                        <td>
+                          <label><b>Username:</b></label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input style="margin-top: 15px;" type="text" name="username" required>
+                        </td>
+                      </tr>
+
+                      <!-- mimic <br><br> -->
+                      <tr><td style="height: 30px;"></td></tr>
+
+                      <tr>
+                        <td>
+                          <label><b>Password:</b></label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input style="margin-top: 15px;" type="password" name="password" required>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <a style="text-decoration: none;" href="myforgetpassword.html">
+                            <p class="password" style="margin-left: 20px;">forget password?</p>
+                          </a>
+                        </td>
+                      </tr>
+
+
+                      <tr><td style="height: 30px;"></td></tr>
+
+                      <tr>
+                        <td>
+                          <div class="button">
+                            <a href="mybiography.html">
+                              <button class="login" type="button">Login</button>
+                            </a>
+                            <button class="login" type="reset">Clear</button>
+                            <a href="index.html">
+                              <button class="login" type="button">Cancel</button>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <p style="font-size: 13px; margin-top: 10px; text-align: center;">
+                            Click here if you don't have an account yet.
+                            <a class="signup" href="mysignup.html">Sign-Up</a>
+                          </p>
+                        </td>
+                      </tr>
+
+                    </table>
+                  </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>
+                &copy; 2026 Zulfah's Website. All rights reserved.
+                <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+            </p>
+        </footer>
+
+    </body>
+</html>

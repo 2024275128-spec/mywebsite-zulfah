@@ -1,0 +1,520 @@
+<html>
+	<head>
+		<style>
+			body{
+            	text-align:center;
+    			background: #f7f5f2;
+    			margin: 0;
+        	}
+        	h1{
+        		color: #7a1010;
+        	}
+        	h2{
+        		color: #000000;
+        	}
+        	fieldset{
+        		width: 800px;
+        		border-radius: 5px;
+        		display: inline-block;
+    			text-align: left;
+    			border-color: #bfd2d3;
+			}
+			footer {
+			    text-align: center;
+			    padding: 40px 0;
+			    font-size: 13px;
+			    color: var(--text-light);
+			}
+			button{
+				width: 100px;
+				height: 30px;
+				border-radius: 15px;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+				border-color: #7a1010;
+				border-style: solid;
+				margin-top: 20px;
+			}
+			@media print {
+				button,
+			    .top-header,
+			    footer {
+			        display: none;
+			    }
+
+			    body {
+			        background: white;
+			        color: black;
+			        -webkit-print-color-adjust: exact;
+			        print-color-adjust: exact;
+			        font-size: 13px;
+			    }
+
+			    .mainbox {
+			        transform: scale(0.80);
+			        transform-origin: top left;
+			        width: 100%;
+			        
+			    }
+			    .box2{
+			    	height: 1145px !important;        /* allow it to shrink naturally */
+			        width: 250px !important;        /* keep same width as screen */
+
+			        padding-top: 20px !important;
+			        padding-bottom: 20px !important;
+
+			        box-shadow: none !important;    /* optional: cleaner print */
+			        background: #fff !important;
+
+			        overflow: hidden !important;
+			        box-sizing: border-box;
+			    }
+			    p {
+			        margin: 5px 0;
+			    }
+			}
+
+			button:hover{
+				color: #ffd700;
+			}
+
+
+			/*LOGO*/
+        	.logo {
+			    font-family: 'Times New Roman', serif;
+			    font-size: 26px;
+			    letter-spacing: 1px;
+			}
+			.logo a{
+				transition: 0.3s;
+				color: black;
+				text-decoration: none;
+			}
+			.logo a:hover{
+
+			}
+
+			/*HEADER*/
+			.top-header {
+			    background: #f7f5f2;
+			    color: black;
+			    padding: 15px 30px;
+			}
+
+			.nav {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+			.menu {
+			    display: flex;
+			}
+			.menu a {
+			    margin-left: 25px;
+			    text-decoration: none;
+			    color: black;
+			    font-weight: bold;
+			    font-size: 16px;
+			    transition: 0.3s;
+			}
+			.menu a:hover {
+			    color: #ffd700;
+			}
+
+			/*CIRCLES*/
+			.circle {
+			    width: 200px;
+			    height: 200px;
+			    background: #000000;
+			    border-radius: 50%;
+			    display: flex; 
+			    justify-content: center;
+			    align-items: center; 
+			    margin-top: 0px;
+			    margin-bottom: 30px;
+			}
+			.circle2 {
+			    width: 190px;
+			    height: 190px;
+			    background: #ffffff;
+			    border-radius: 50%;
+			    display: flex; 
+			    justify-content: center;
+			    align-items: center; 
+			}
+
+			/*BOXES*/
+			.mainbox {
+
+        	   width: 1160px;
+			   height: auto;
+			   margin: 0 auto;
+			   margin-top: 20px;
+			   background: #000000;
+			   border-radius: 20px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   padding-top: 5px;
+			   padding-bottom: 5px;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+			.box {
+	           	width: 880px;
+			    height: auto;
+			    margin: 0 auto;
+			    background: #ffffff;
+			    border-radius: 20px;
+			    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			    font-family: Times New Roman;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    display: flex;
+			    flex-direction: column;  /* 👈 stack items vertically */
+			    gap: 10px;
+			    align-items: center;   /* 👈 centers horizontally */
+    			justify-content: flex-start; /* stays at top */
+        	}
+			.box2 {
+	           width: 250px;
+			   height: auto;
+			   margin: 0 auto;
+			   background: #ffffff;
+			   border-radius: 20px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   text-align: center;
+			   display: flex; 
+			   flex-direction: column;
+			   gap: 10px;
+			   align-items: center;  
+    		   justify-content: flex-start;
+    		   padding-top: 20px;
+    		   padding-bottom: 20px;
+        	}
+        	.second{
+				width: 180px;
+        		border-radius: 5px;
+        		display: inline-block;
+    			text-align: left;
+			}
+        	.in{
+        		height: 10px;
+        		background-color: green;
+        		margin: 0px;
+        	}
+        	.out{
+        		width: 200px;
+        		height: 10px;
+        		background-color: #bfd2d3;
+        	}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header class="top-header">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"> SZR</a>
+				</div>
+				<div class="menu">
+					<a href="mybiography.html">Biography</a>
+				    <a href="mygallery.html">Gallery</a>
+				    <a href="myschool.html">School</a>
+				    <a href="mylogin.html">Login</a>
+				    <a href="mysignup.html">Sign-up</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="mainbox">
+			<div class="box2">
+				<div class="circle">
+					<div class="circle2">
+						<img src="profilepic.png" width="420px" height="236px">
+					</div>
+				</div>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Contact</b></legend>
+						<p><b>Email :</b> sitizulfah05@gmail.com<br>
+						<b>Phone :</b> <br>+06 010-7898164</p>
+				</fieldset>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Personal Information</b></legend>
+						<p><b>Birth Date :</b><br> 24 Januari 2005<br>
+						<b>NRIC :</b> <br>050124-00-0000</p>
+				</fieldset>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Address</b></legend>
+						<p>No 132, Jalan Saujana Indah 6, Tapah Road, Perak<br>
+				</fieldset>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Language Skills</b></legend>
+						<br>
+						<b>Malay :</b>
+							<div class="out">
+								<div class="in" style="width: 180px;">
+								</div>
+							</div>
+							<br>
+						<b>English :</b>
+							<div class="out">
+								<div class="in" style="width: 180px;">
+								</div>
+							</div>
+							<br>
+						<b>Chinese :</b>
+							<div class="out">
+								<div class="in" style="width: 100px;">
+								</div>
+							</div>
+							<br>
+				</fieldset>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Personal Skills</b></legend>
+						<br>
+							<b>Microsoft Office :</b>
+							<div class="out">
+								<div class="in" style="width: 150px;">
+								</div>
+							</div>
+							<br>
+
+							<b>Communication :</b> 
+							<div class="out">
+								<div class="in" style="width: 180px;">
+								</div>
+							</div>
+							<br>
+
+						<b>Coding :</b>
+							<div class="out">
+								<div class="in" style="width: 150px;">
+								</div>
+							</div>
+							<br>	
+
+						<b>Web Design :</b>
+							<div class="out">
+								<div class="in" style="width: 100px;">
+								</div>
+							</div>
+							<br>
+						
+				</fieldset>
+				<fieldset class="second" style="padding-bottom: 0px;">
+					<legend><b>Coding Language</b></legend>
+						<p>Java, C++, HTML, Phython, PHP
+						</p>
+				</fieldset>
+
+			</div>
+
+
+
+
+
+			<div class="box">
+				<fieldset>
+					<legend><b>About</b>
+					</legend>
+						<p>“My name is Siti. I am a student who is passionate about learning and improving my skills in technology and problem-solving. I enjoy exploring new ideas and working on projects that help me gain experience and knowledge. I am always eager to learn and grow in both academic and personal development.”</p>
+				</fieldset>
+
+				<fieldset>
+					 <legend><b>Education Background</b></legend>
+						<table style="width:100%; border-collapse: collapse;">
+
+						<tr>
+						    <td style="text-align:right;"><b>Oct 2024 - Now</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li><b>Bachelor of Computer Science</b><br>
+								        Universiti Teknologi Mara<br>
+								        Kampus Tapah
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>July 2023 - Mei 2024</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li><b>Matriculation - Module Science Physical</b><br>
+									        Matriculation<br>
+									        Gopeng, Perak
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>2018 - 2023</b></td>
+						</tr>
+						<tr>
+						    <td>
+						        <ul>
+							        <li><b>Sijil Pelajaran Malaysia</b><br>
+						        Sekolah Menengah Kebangsaan Bandar Baru Putra<br>
+						        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>2017</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li><b>Ujian Penilaian Sekolah Rendah (Primary 6)</b><br>
+						        Sekolah Kebangsaan Bandar Baru Putera<br>
+						        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						        
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>2012 - 2017</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li><b>Chinese Education (Primary 1 - Primary 5)</b><br>
+						        Sekolah Jenis Kebangsaan Cina Tat Choi<br>
+						        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						        
+						    </td>
+						</tr>
+
+						</table>
+				</fieldset>
+
+				<fieldset>
+					 <legend><b>Achievements</b></legend>
+
+						<table style="width:100%; border-collapse: collapse;">
+
+						<tr>
+						    <td style="text-align:right;"><b>July 2023 - Mei 2024</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li>
+							        	<b>Active Member Dynamic Peer Counseling</b><br>
+								        Matriculation<br>
+								        Gopeng, Perak
+							    	</li>
+						    	</ul>
+						        
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>July 2021 - Dec 2022</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li>
+							        	<b>Peer Counseling Secretary</b><br>
+									        Sekolah Menengah Kebangsaan Bandar Baru Putra<br>
+									        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>July 2021 - Dec 2022</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li>
+							        	<b>President of the Girl Guides Association</b><br>
+								        Sekolah Menengah Kebangsaan Bandar Baru Putra<br>
+								        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						<tr><td style="height:15px;"></td></tr>
+
+						<tr>
+						    <td style="text-align:right;"><b>2016</b></td>
+						</tr>
+						<tr>
+						    <td>
+						    	<ul>
+							        <li>
+							        	<b>1st Dan Black Belt in Taekwondo</b><br>
+						        Sekolah Kebangsaan Bandar Baru Putera<br>
+						        Ipoh, Perak
+							    	</li>
+						    	</ul>
+						    </td>
+						</tr>
+
+						</table>
+				</fieldset>
+			</div>
+		</div>
+
+		<button onclick="window.print()">
+			Download
+		</button>
+
+		<script>
+			function downloadPDF() {
+			    const element = document.body;
+
+			    html2pdf()
+			        .set({
+			            margin: 0.5,
+			            filename: 'my-page.pdf',
+			            image: { type: 'jpeg', quality: 0.98 },
+			            html2canvas: { scale: 2 },
+			            jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+			        })
+			        .from(element)
+			        .save();
+			}
+		</script>
+
+
+		<footer>
+		    <p>
+		        &copy; 2026 Zulfah's Website. All rights reserved.
+		        <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+		    </p>
+		</footer>
+		
+	</body>
+</html>

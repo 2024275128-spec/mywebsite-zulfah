@@ -1,0 +1,343 @@
+<html>
+	<head>
+		<style>
+			body{
+            	text-align:center;
+    			background: #f7f5f2;
+    			margin: 0;
+        	}
+        	h1{
+        		color: #000000;
+        		padding-top: 30px;
+        	}
+        	footer {
+			    text-align: center;
+			    padding: 40px 0;
+			    font-size: 13px;
+			    color: var(--text-light);
+			}
+
+        	/*LOGO*/
+        	.logo {
+			    font-family: 'Times New Roman', serif;
+			    font-size: 26px;
+			    letter-spacing: 1px;
+			}
+			.logo a{
+				transition: 0.3s;
+				color: black;
+				text-decoration: none;
+			}
+			.logo a:hover{
+
+			}
+
+
+			/*HEADER*/
+			.top-header {
+			    background: #f7f5f2;
+			    color: black;
+			    padding: 15px 30px;
+			}
+
+			.nav {
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+			.menu {
+			    display: flex;
+			}
+			.menu a {
+			    margin-left: 25px;
+			    text-decoration: none;
+			    color: black;
+			    font-weight: bold;
+			    font-size: 16px;
+			    transition: 0.3s;
+			}
+			.menu a:hover {
+			    color: #ffd700;
+			}
+
+			/*BOXES*/
+			.mainbox {
+        	   width: 1040px;
+			   height: 310px;
+			   margin: 0 auto;
+			   margin-top: 15px;
+			   background: #000000;
+			   border-radius: 20px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   padding-top: 25px;
+			   padding-bottom: 25px;
+			   padding-right: 0px;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+        	.box {
+	           width: 1030px;
+			   height: 350px;
+			   margin: 0 auto;
+			   background: #ffffff;
+			   border-radius: 15px;
+			   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			   font-family: Times New Roman;
+			   text-align: center;
+			   display: flex; 
+			   justify-content: center;
+			   align-items: center; 
+        	}
+
+        	/*TABLES*/
+			table {
+			  width: 100%;
+			  border-collapse: collapse; /* removes double borders */
+			  border-radius: 10px;
+              overflow: hidden;
+              border-collapse: separate; /* must be separate */
+              border-spacing: 10px;      /* 👈 this is the gap */
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			a:hover{
+				color: #ffd700;
+			}
+
+			th, td {
+			  border: 1px #333;
+			  padding: 10px;            /* space inside cells */
+			  text-align: center;
+			  border-radius: 10px; 
+			}
+
+			th {
+			  background-color: pink;
+			  color: white;
+			  text-transform: uppercase;
+              letter-spacing: 1px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #f2f2f2; /* zebra stripes */
+			}
+
+			tr:hover {
+			  background-color: #ddd;    /* hover effect */
+			}
+
+			/*BUTTONS*/
+			button{
+				border-radius: 20px;
+				border-style: solid;
+				border-color: #f7f5f2;
+				padding: 0px;
+			}
+			@media print {
+			    button {
+			        display: none; /* hide button */
+			    }
+
+			    body {
+			        background: white;
+			        color: black;
+        			-webkit-print-color-adjust: exact;
+        			print-color-adjust: exact;
+			    }
+			    .top-header {
+			        display: none;
+			    }
+			    .descript{
+			    	display: none;
+			    }
+			    footer{
+			    	display: none;
+			    }
+			}
+			.gambar {
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 20px;
+			    overflow: hidden;
+			    background-color: #f7f5f2;
+			}
+
+			.gambar img {
+				width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			    display: block;
+			    border: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header class="top-header">
+			<div class="nav">
+				<div class="logo">
+					<a href="index.html"> SZR</a>
+				</div>
+				<div class="menu">
+					<a href="mybiography.html">Biography</a>
+				    <a href="mygallery.html">Gallery</a>
+				    <a href="myschool.html">School</a>
+				    <a href="mylogin.html">Login</a>
+				    <a href="mysignup.html">Sign-up</a>
+				</div>
+			</div>
+		</header>
+
+		<h1>SEM 4 | TIMETABLE</h1>
+		<div class="mainbox">
+			<div class="box">
+				<table>
+					<tr style="">	
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">08:00 a.m. - 10:00 a.m.</th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">10:00 a.m. - 12:00 p.m.</th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">12:00 p.m. - 02:00 p.m.</th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">02:00 p.m. - 04:00 p.m.</th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">04:00 p.m. - 06:00 p.m.</th>
+						<th colspan="2" style="background-color: #e7e7e7; color: black;">06:00 p.m. - 08:00 p.m.</th>
+					</tr>
+					<tr>	
+						<th style="background-color: #e7e7e7; color: black;">Monday</th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #decac1; color: black;">
+							<a href="mycsc577.html">
+								CSC 577
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #e397a7; color: black;">
+							<a href="mycsc584.html">
+								CSC 584
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+					</tr>
+					<tr>
+						<th style="background-color: #e7e7e7; color: black;">Tuesday</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #f2c4d8; color: black;">
+							<a href="mycsc574.html">
+								CSC 574
+							</a>
+						</th>
+						<th colspan="2" style="background-color: #b5626d; color: black;">
+							<a href="mycsc508.html">
+								CSC 508
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #9da767; color: black;">
+							<a href="mycsc569.html">
+								CSC 569
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #d6d8b0; color: black;">
+							<a href="mytmc451.html">
+								TMC 451
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+					</tr>
+					<tr>
+						<th style="background-color: #e7e7e7; color: black;">Wednesday</th>
+						<th colspan="2" style="background-color: #decac1; color: black;">
+							<a href="mycsc577.html">
+								CSC 577
+							</a>
+						</th>
+						<th colspan="2" style="background-color: #9da767; color: black;">
+							<a href="mycsc569.html">
+								CSC 569
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th>
+					</tr>
+					<tr>
+						<th style="background-color: #e7e7e7; color: black;">Thursday</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #f2c4d8; color: black;">
+							<a href="mycsc574.html">
+								CSC 574
+							</a>
+						</th>
+						<th colspan="2" style="background-color: #e397a7; color: black;">
+							<a href="mycsc584.html">
+								CSC 584
+							</a>
+						</th>
+						<th style="background-color: white;"> </th>
+						<th colspan="2" style="background-color: #b5626d; color: black;">
+							<a href="mycsc508.html">
+								CSC 508
+							</a>
+						</th>
+						<th colspan="2" style="background-color: #b5d8da; color: black;">
+							<a href="mylcc500.html">
+								LCC 500
+							</a>
+						</th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+					</tr>
+					<tr>
+						<th style="background-color: #e7e7e7; color: black;">Friday</th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+						<th style="background-color: white;"> </th><th style="background-color: white;"> </th><th style="background-color: white;"> </th>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<br style="padding-top: 20px;">
+		<button onclick="window.print()">
+			<div class="gambar">
+				<img src="matchastrawberry.png"> 
+			</div>
+		</button>
+			<div class="descript" style="color: black;">
+				click this matcha strawberry to download this timetable :)
+			</div>
+
+
+		<script>
+			function downloadPDF() {
+			    const element = document.body;
+
+			    html2pdf()
+			        .set({
+			            margin: 0.5,
+			            filename: 'my-page.pdf',
+			            image: { type: 'jpeg', quality: 0.98 },
+			            html2canvas: { scale: 2 },
+			            jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+			        })
+			        .from(element)
+			        .save();
+			}
+		</script>
+
+		<footer>
+		    <p>
+		        &copy; 2026 Zulfah's Website. All rights reserved.
+		        <a href="/disclaimer" style="color: #7a1010;">Disclaimer</a>
+		    </p>
+		</footer>
+	</body>
+</html>
